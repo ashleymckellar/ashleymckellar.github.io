@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "contact-form-with-emailjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashleymckellar/ashleymckellar.github.io.git"
+  },
+  "author": "Ashley McKellar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashleymckellar/ashleymckellar.github.io/issues"
+  },
+  "homepage": "https://github.com/ashleymckellar/ashleymckellar.github.io#readme"
+}
