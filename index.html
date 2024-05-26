@@ -4,6 +4,30 @@
 	<head>
 		<title>Ashley McKellar</title>
 		<meta charset="utf-8" />
+		<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+		</script>
+		<script type="text/javascript">
+			(function(){
+				console.log('Initializing EmailJS...');
+			   emailjs.init({
+				 publicKey: 'arI1lbCnWE-Tlm6HA',
+			   });
+			})();
+		 </script>
+		     <script type="text/javascript">
+				window.onload = function() {
+					document.getElementById('contact-form').addEventListener('submit', function(event) {
+						event.preventDefault();
+						emailjs.sendForm('service_4yu24wb', 'contact_form', this)
+							.then(() => {
+								console.log('SUCCESS!');
+							}, (error) => {
+								console.log('FAILED...', error);
+							});
+					});
+				}
+			</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
@@ -53,7 +77,7 @@
 										<p>Web developer</p>
 										</header>
 									<p>
-										In my technical and customer support career, I've honed my skills in handling diverse clients and complex technical challenges, emphasizing empathy, effective communication, and problem-solving. I recently completed a full stack JavaScript certification at V School, specializing in the MERN stack. Since completing my certification, I've been actively engaged as a member of a developer team at V School, participating in weekly scrums, and completing internship projects for clients under a project manager. I'm now seeking my first full-time role as a front-end React or full-stack MERN developer.</p>
+										In my technical and customer support career, I've honed my skills in handling diverse clients and complex technical challenges, emphasizing empathy, effective communication, and problem-solving. I recently completed a full stack JavaScript certification at V School, specializing in the MERN stack. Since completing my certification, I've been actively engaged as a member of a developer team at V School, participating in weekly scrums, and completing internship projects for clients under a project manager. I'm now seeking my first full-time role as a front-end or full-stack developer.</p>
 							</section>
 
 							
@@ -66,14 +90,14 @@
 									<div class="features">
 									
 										<article>
-											<a href="https://hotsauceworld-777aaa9774df.herokuapp.com/" class="image"><img src="images/hotSaucescreenshot.png" alt="" /></a>
+											<a href="https://sidhu-farms1.vercel.app/" class="image"><img src="images/SidhuFarmsimg.png" alt="" /></a>
 											<div class="inner">
-												<h4>Hot Sauce Wiki</h4>
-												<p>Full stack web app, complete with authentication, this site is a home for hot sauce lovers to explore their favorite sauces and submit new ones.</p>
+												<h4>Sidhu Farms</h4>
+												<p>I partnered with another developer and project manager to build the Sidhu Farms static site using React. My key contributions included developing the crops component, which involved implementing conditional rendering and media queries. I also utilized Tailwind CSS to ensure the site was fully responsive across various devices. </p>
 											</div>
 										</article>
 										<article>
-											<a href="https://www.djbentleytaylor.com/" class="image"><img src="images/DJBentley.png" alt="" /></a>
+											<a href="https://www.djbentleytaylor.com/" class="image"><img src="images/djbentleyv2.png" alt="" /></a>
 											<div class="inner">
 												<h4>DJ Bentley Taylor</h4>
 												<p>I collaborated with three developers to build a new React-based site for DJ Bentley Taylor, where I implemented a MixCloud music player, EmailJS-powered contact form with a React modal, and integrated the MixCloud API for his bio information. I was responsible for deploying the site as a static one via Render.</p>
@@ -84,6 +108,26 @@
 									</div>
 								</div>
 							</section>
+							<section id="four">
+								<div class="container">
+									<h3>Contact Me</h3>
+									<p>Are you interested in collaborating?   Let's get in touch!</p>
+									<form id="contact-form">
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" class="primary" value="Send Message" /></li>
+													<li><input type="reset" value="Reset Form" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</div>
+							</section>
 <section id="footer">
 							<ul class="copyright">
 								<li>&copy; 2023 Ashley McKellar Enterprises. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
@@ -91,6 +135,8 @@
 			
 						</section>
 		<!-- Scripts -->
+
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
