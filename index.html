@@ -4,17 +4,15 @@
 	<head>
 		<title>Ashley McKellar</title>
 		<meta charset="utf-8" />
-		<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+		<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 		</script>
 		<script src="https://kit.fontawesome.com/b1c5dc229e.js" crossorigin="anonymous"></script>
 		<script type="text/javascript">
 			(function(){
 				console.log('Initializing EmailJS...');
-			   emailjs.init({
-				 publicKey: 'arI1lbCnWE-Tlm6HA',
-			   });
-			})();
+				emailjs.init('arI1lbCnWE-Tlm6HA');
+        })();
+    </script>
 		 </script>
 		     <script type="text/javascript">
 				window.onload = function() {
@@ -117,7 +115,7 @@
 								</div>
 							</section>
 							<section id="four">
-								<!-- <div class="container">
+								<div class="container">
 									<h3>Contact Me</h3>
 									<p>Are you interested in collaborating?   Let's get in touch!</p>
 									<form id="contact-form">
@@ -134,7 +132,7 @@
 											</div>
 										</div>
 									</form>
-								</div> -->
+								</div>
 							</section>
 <section id="footer">
 							<ul class="copyright">
@@ -152,9 +150,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-
+			
 	</body>
 </html>
